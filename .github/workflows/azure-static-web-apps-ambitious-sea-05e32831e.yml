@@ -3,11 +3,11 @@ name: Azure Static Web Apps CI/CD
 on:
   push:
     branches:
-      - roadmap4
+      - tabsreconfig
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
-      - roadmap4
+      - tabsreconfig
 
 jobs:
   build_and_deploy_job:

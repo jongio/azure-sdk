@@ -2,11 +2,7 @@
 
 ## .NET
 
-{% if include.type == "all" %}
-  {% assign packages = site.data.releases.latest.dotnet-packages %}
-{% else %}
-  {% assign packages = site.data.releases.latest.dotnet-packages | where: 'Type', include.type | where: 'New', 'true' %}
-{% endif %}
+{% assign packages = site.data.releases.latest.dotnet-packages | where: 'Type', include.type %}
 
 {{ description | replace: 'PackageCount', packages.size }}
 

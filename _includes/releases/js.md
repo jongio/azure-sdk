@@ -2,11 +2,7 @@
 
 ## JavaScript
 
-{% if include.type == "all" %}
-  {% assign packages = site.data.releases.latest.js-packages %}
-{% else %}
-  {% assign packages = site.data.releases.latest.js-packages | where: 'Type', include.type | where: 'New', 'true' %}
-{% endif %}
+{% assign packages = site.data.releases.latest.js-packages | where: 'Type', include.type %}
 
 {{ description | replace: 'PackageCount', packages.size }}
 

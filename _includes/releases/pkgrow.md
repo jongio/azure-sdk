@@ -1,4 +1,4 @@
-{% if item.Hide != "true" %}
+{% if item.Hide != "true" and item.Replace == "" %}
 
     {% assign trimmedPackage = item.Package | remove: package_trim %}
         
