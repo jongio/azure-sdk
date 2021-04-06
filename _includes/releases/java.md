@@ -2,9 +2,7 @@
 
 ## Java
 
-{% assign packages = site.data.releases.latest.java-packages | where: 'Type', include.type %}
-
-{{ description | replace: 'PackageCount', packages.size }}
+{% assign packages = site.data.releases.latest.java-packages %}
 
 {% include releases/tabs.md lang="java" active=include.type %}
 

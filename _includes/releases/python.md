@@ -2,9 +2,7 @@
 
 ## Python
 
-{% assign packages = site.data.releases.latest.python-packages | where: 'Type', include.type %}
-
-{{ description | replace: 'PackageCount', packages.size }}
+{% assign packages = site.data.releases.latest.python-packages %}
 
 {% include releases/tabs.md lang="python" active=include.type %}
 

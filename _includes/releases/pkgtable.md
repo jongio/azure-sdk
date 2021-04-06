@@ -1,3 +1,4 @@
+{% assign packages = packages | where: 'Type', include.type | where: 'New', 'true' %}
 
 <table class="table table-bordered">
 <tr>
@@ -16,3 +17,7 @@
 
 </tbody>
 </table>
+
+{% if package_search_url != "" %}
+<small>See [{{ package_label }}]({{ package_search_url }}) for a complete list of packages published by the azure-sdk account.</small>
+{% endif %}

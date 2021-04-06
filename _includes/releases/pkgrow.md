@@ -1,4 +1,4 @@
-{% if item.Hide != "true" and item.Replace == "" %}
+{% if item.Hide != "true" %}
 
     {% assign trimmedPackage = item.Package | remove: package_trim %}
         
@@ -6,8 +6,8 @@
     
     <tr scope="row">
         <td title="{{ item.Package }}">
-            <div>{{ item.DisplayName }} {% if include.type == "all" and item.New == "true" %}<i>(New)</i>{%endif%}</div>
-            <div><small class="text-muted">{{item.Package}}</small></div>
+            <div>{{ item.DisplayName }}</div>
+            <div><small class="text-muted">{{ item.Package }}</small></div>
             <div>{% include releases/replace.md %}</div>
         </td>
         <td>{% include releases/links.md version="VersionGA" %}</td>

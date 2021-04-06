@@ -1,6 +1,7 @@
 {% assign package_label = "NuGet" %}
 {% assign package_trim = "Azure." %}
 {% assign pre_suffix = "-pre" %}
+{% assign package_search_url = "https://www.nuget.org/profiles/azure-sdk" %}
 {% assign package_root_url_template = "https://www.nuget.org/packages/item.Package" %}
 {% assign package_url_template = "https://www.nuget.org/packages/item.Package/item.Version" %}
 {% assign msdocs_url_template = "https://docs.microsoft.com/dotnet/api/overview/azure/item.TrimmedPackage-readme" %}

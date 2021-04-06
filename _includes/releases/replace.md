@@ -1,6 +1,5 @@
 {% if item.Replace != "" %}
-    {% if item.New != "true" %}
-    <div class="replacement"><small>Replaced By:
+    <div class="replacement"><small>Replaces:
     {% assign replaceItems = item.Replace | split: "," %}
     <ul>
     {% for replaceItem in replaceItems %}
@@ -10,5 +9,4 @@
     {% endfor %}
     </ul>
     </small></div>
-    {% endif%}
 {% endif %}

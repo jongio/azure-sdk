@@ -2,9 +2,7 @@
 
 ## .NET
 
-{% assign packages = site.data.releases.latest.dotnet-packages | where: 'Type', include.type %}
-
-{{ description | replace: 'PackageCount', packages.size }}
+{% assign packages = site.data.releases.latest.dotnet-packages %}
 
 {% include releases/tabs.md lang="dotnet" active=include.type %}
 

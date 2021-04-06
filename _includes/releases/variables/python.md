@@ -1,6 +1,7 @@
 {% assign package_label = "PyPI" %}
 {% assign package_trim = "azure-" %}
 {% assign pre_suffix = "" %}
+{% assign package_search_url = "https://pypi.org/user/azure-sdk/" %}
 {% assign package_root_url_template = "https://pypi.org/project/item.Package" %}
 {% assign package_url_template = "https://pypi.org/project/item.Package/item.Version" %}
 {% assign msdocs_url_template = "https://docs.microsoft.com/python/api/overview/azure/item.TrimmedPackage-readme" %}

@@ -1,6 +1,7 @@
 {% assign package_label = "Maven" %}
 {% assign package_trim = "azure-" %}
 {% assign pre_suffix = "" %}
+{% assign package_search_url = "https://search.maven.org/search?q=g:com.microsoft.azure%20OR%20g:com.azure" %}
 {% assign package_root_url_template = "https://search.maven.org/artifact/item.GroupId/item.Package" %}
 {% assign package_url_template = "https://search.maven.org/artifact/item.GroupId/item.Package/item.Version/jar/" %}
 {% assign msdocs_url_template =  "https://docs.microsoft.com/java/api/overview/azure/item.TrimmedPackage-readme" %}
